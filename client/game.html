@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/gameStyle.css">
+        <!--for using socket io on client side-->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/game.js"></script>
+    </head>
+    <body>
+        <!--game resources to be used in canvas-->
+
+
+        <img src="images/Backgrounds/canvasBackground.png" id="canvasBackground" style="display:none">
+
+
+        <img src="images/Tanks/greenTank.png" id="greenTank" style="display:none">
+        <img src="images/Tanks/orangeTank.png" id="orangeTank" style="display:none">
+        <img src="images/Tanks/blueTank.png" id="blueTank" style="display:none">
+
+
+        <img src="images/Environment/barrelGreen_side.png" id="barrelGreen_side" style="display:none">
+        <img src="images/Environment/barrelGreen_side_damaged.png" id="barrelGreen_side_damaged" style="display:none">
+        <img src="images/Environment/barrelGreen_up.png" id="barrelGreen_up" style="display:none">
+        <img src="images/Environment/barrelGrey_sde_rust.png" id="barrelGrey_sde_rust" style="display:none">
+        <img src="images/Environment/barrelGrey_side.png" id="barrelGrey_side" style="display:none">
+        <img src="images/Environment/barrelGrey_up.png" id="barrelGrey_up" style="display:none">
+        <img src="images/Environment/barrelRed_side.png" id="barrelRed_side" style="display:none">
+        <img src="images/Environment/barrelRed_up.png" id="barrelRed_up" style="display:none">
+        <img src="images/Environment/oil.png" id="oil" style="display:none">
+        <img src="images/Environment/sandbagBeige.png" id="sandbagBeige" style="display:none">
+        <img src="images/Environment/sandbagBrown.png" id="sandbagBrown" style="display:none">
+        <img src="images/Environment/treeSmall.png" id="treeSmall" style="display:none">
+        <img src="images/Red-dot-5px.png" id="dot" style="display:none">
+
+        <img src="images/Bullets/blueTankBullet.png" id="blueTankBullet" style="display:none">
+        <img src="images/Bullets/greenTankBullet.png" id="greenTankBullet" style="display:none">
+        <img src="images/Bullets/redTankBullet.png" id="redTankBullet" style="display:none">
+
+        <img src="images/Smoke/smokeGrey4.png" id="smokeGrey4" style="display:none">
+        
+
+
+        
+
+
+
+        <!--game resource list ends here-->
+
+
+        <div id="loadingAnimation">
+            <img src="images/loading.gif">
+        </div>
+        <p id="header">SUPER TANKS</p>
+        <div id="statusBar">
+            <div id="mainText">
+                <p>ACTIVE PLAYERS</p>
+            </div>
+        </div>
+        <div id="environmentChanger">
+            <img src="images/resetEnvironment.png">
+        </div>
+        <canvas width='800px' height="600px" id="ctx"></canvas>
+
+    </body>
+</html>

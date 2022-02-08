@@ -1,0 +1,106 @@
+head,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(133, 133, 185,0.5);
+    background-image: url(../images/Backgrounds/landingPageBackgound.jpg);
+    /*background-image: url(../images/gameBackground.jpg);*/
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+#statusBar{
+    display: none;
+    position: absolute;
+    background-color: rgba(153, 152, 152,0.4);
+    margin-left: 90%;
+    height: 90%;
+    width: 10%;
+}
+
+#mainText{
+    width: 100%;
+    height: 5%;
+    background-color: rgba(243, 241, 241,0.5);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+#mainText p{
+    padding:0;
+    margin:0;
+}
+
+.statusBarCard{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    font-size: 15px;
+}
+
+.statusBarCard img{
+    margin-left: auto auto;
+    border: 1px white solid;
+}
+
+#header{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 35%;
+    color:white;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+canvas{
+    background-color: white;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 25%;
+}
+
+/*container of the animation loading*/
+#loadingAnimation{
+    position: absolute;
+    background-color: rgb(175, 174, 174);
+    height:100%;
+    width:100%;
+    top:0;
+    z-index: 2;
+}
+/*the actual animation image*/
+#loadingAnimation img{
+    /*for it to be able to change its position*/
+    position: relative;
+    top:30%;
+    left:40%;
+}
+
+.alertBox{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 20%;
+    top: 13%;
+    background-color: rgba(231, 91, 91, 0.6);
+    border-radius: 2px;
+    
+
+}
+
+.alertText{
+    position: absolute;
+    top: 20%;
+    left:30%;
+    color:whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#environmentChanger{
+    position: absolute;
+    top:13%;
+    left: 5%;
+    height: 50px;
+    width: 50px;
+}

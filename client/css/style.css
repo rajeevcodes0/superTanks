@@ -1,0 +1,87 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(227, 252, 227);*/
+    background-image: url(../images/Backgrounds/landingPageBackgound.jpg);
+    background-size: cover;
+}
+#wrapper{
+    position: absolute;
+    background-color: rgba(128, 124, 124,0.4);
+    height: 50%;
+    width:30%;
+    border-radius:10%;
+    top:20%;
+    left:35%;
+}
+
+
+
+#wrapper input{
+    margin-left: 15%;
+    padding: 10px;
+    margin-right: 15%;
+    width: 70%;
+}
+#wrapper input:hover, #wrapper input:focus{
+    box-sizing: border-box;
+    border:2px rgb(75, 74, 74) solid;
+    background-color: rgb(165, 164, 164);
+    color: white;
+}
+
+#header{
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 19%;
+    width: 54%;
+    font-family: 'Just Me Again Down Here', cursive;
+    color: whitesmoke;
+    font-size: 20px;
+}
+#fotter{
+    display: inline-block;
+    margin-left: 35%;
+    margin-right: 22%;
+    width: 46%;
+    font-family: 'Just Me Again Down Here', cursive;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.tank-select{
+    position: relative;
+    width:60px;
+    height:60px;
+    margin: 5%;
+}
+
+.tank-select:hover{
+    border: 2px white solid;
+    box-sizing: border-box;
+}
+#tankHolder{
+    width: 70%;
+    margin-top: 10%;   
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+/*container of the animation loading*/
+#loadingAnimation{
+    position: absolute;
+    background-color: rgb(227, 252, 227);
+    height:100%;
+    width:100%;
+    z-index: 2;
+}
+/*the actual animation image*/
+#loadingAnimation img{
+    /*for it to be able to change its position*/
+    position: relative;
+    top:30%;
+    left:40%;
+}
